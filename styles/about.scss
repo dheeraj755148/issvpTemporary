@@ -4,6 +4,7 @@
     background-image: url("../images/american-public-power-association-XGAZzyLzn18-unsplash\ \(1\).jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     .bg-light {
         background-color: transparent !important;
     }
@@ -48,4 +49,41 @@
             padding: 1%;
         }
     }
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+.info-section {
+    .blocked-material {
+        float: left;
+        border: 5px solid #ffb600;
+        width: 0px;
+        height: 35px;
+        clear: both;
+        margin-top: 10%;
+    }
+    .info-material-title {
+        margin-top: 10%;
+        font-family: "Titillium Web", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 150%;
+        line-height: 150%;
+        color: #000000;
+        letter-spacing: 0.06em;
+    }
+    .info-material {
+        margin-top: 7%;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 90%;
+        line-height: 200%;
+        letter-spacing: 0.06em;
+    }
+}
+.image-parent {
+    width: 100%;
+    margin-top: 10%;
 }
