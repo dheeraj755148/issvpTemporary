@@ -16,6 +16,8 @@
     rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/about.css" />
   <title>Home</title>
 </head>
@@ -31,10 +33,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="./home.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="./about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Blog</a>
@@ -185,7 +187,7 @@
           <p class="team-picture-heading">OUR TEAM</p>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12 col-sm-12 team-picture-image" >
+      <div class="col-lg-12 col-md-12 col-sm-12 team-picture-image">
         <img src="./images/msteamshero_0_0 1.png" alt="">
       </div>
     </div>
@@ -217,11 +219,86 @@
         <img src="./images/image 18.png" alt="">
         <img src="./images/image 4.png" alt="">
       </div>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
+<footer>
+
+  <div class="container-fluid mt-5">
+    <div class="card mx-5">
+      <div class="row mb-4 ">
+        <div class="col-md-4 col-sm-11 col-xs-11">
+          <div class="footer-text pull-left">
+            <div class="d-flex">
+
+              <h5 class="heading">GET IN TOUCH</h5>
+
+            </div>
+            <p class="card-text">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4756649763167!2d73.02088931485079!3d19.042812987106952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3db5e2c85cd%3A0xef26c52d7d73816e!2sSIES%20Graduate%20School%20of%20Technology!5e0!3m2!1sen!2sin!4v1615472238425!5m2!1sen!2sin"
+                width="120%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </p>
+            <div class="social mt-2 mb-3">
+              <h5 class="heading">SOCIAL</h5>
+              <img class="mr-2" src="./images/facebook.png" alt=""> <img class="mr-2" src="./images/twitter.png" alt="">
+              <img class="mr-2" src="./images/linkedin.png" alt=""> <img class="mr-2" src="./images/instagram.png"
+                alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-1 mb-2"></div>
+        <div class="col-md-2 col-sm-4 col-xs-4">
+          <h5 class="heading">QUICK LINKS </h5>
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Project</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-4">
+          <h5 class="heading">Contact</h5>
+          <ul class="card-text">
+            <li>Phone: 12345678</li>
+            <li>Email: ieee@g.com</li>
+
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-4">
+          <h5 class="heading">NEWSLETTER</h5>
+          <div class="bbb-wrapper fl-wrap">
+            <div class="subcribe-form fl-wrap">
+              <form id="subscribe"> <input class="enteremail" placeholder="Enter your email" type="text"> <button
+                  type="submit" id="subscribe-button" class="subscribe-button color-bg"> Subscribe</button> <label
+                  for="subscribe-email" class="subscribe-message"></label> </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider mb-4"> </div>
+      <div class="row" style="font-size:10px;">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="pull-left">
+            <p class="main-heading">ISSVP</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="pull-right mr-4 d-flex policy">
+            <div class="extra-links">Copyright 2020 IEEE SIESGST</div>
+            <div class="extra-links">Privacy Policy</div>
+            <div class="extra-links">Website Terms</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
 
 </html>
