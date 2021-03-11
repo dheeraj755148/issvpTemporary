@@ -147,7 +147,7 @@ html,body
 }
 
 .solararea {
-  height: 400px;
+  height: 300px;
   width: 100vw;
   background: linear-gradient(360deg, #42ab31 0%, rgba(255, 245, 0, 0.1) 100%);
 }
@@ -199,7 +199,7 @@ html,body
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .quote h1 {
     font-size: 3vh;
     width: 51vw;
@@ -219,19 +219,37 @@ html,body
   }
 
   .photo-content {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .img-title {
     font-size: 30px;
   }
   .img-desc {
-    width: 38vw;
-    font-size: 19px;
+    width: 260px;
+    font-size: 25px;
   }
   .image-hold img {
     object-fit: contain;
   }
+
+  .mycol{
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .mycol1{
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .mycol2{
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .mycol3{
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  
 }
 
 /*# sourceMappingURL=about.css.map */
