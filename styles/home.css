@@ -193,6 +193,214 @@ html,body
 .image-hold {
   box-shadow: 0px 3.84457px 30px 1.92229px rgba(0, 0, 0, 0.5);
 }
+.img-contain{
+  transform: scale(0.8)
+}
+
+
+
+
+
+footer {
+  background-color: #f3f6fd;
+  font-size: 11.5px;
+  font-weight: bold;
+  color: #bdc4cb;
+}
+
+footer .container-fluid {
+  background-color: #f3f6fd;
+}
+
+footer .d-flex img {
+  width: 50px;
+  height: 50px;
+}
+
+footer .main-heading {
+  font-family: "Titillium Web", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 250%;
+  line-height: 150%;
+  color: #000000;
+  letter-spacing: 0.06em;
+}
+
+footer .card {
+  padding: 2% 1%;
+  color: #646771;
+  background-color: #f3f6fd;
+  border: none;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul > li {
+  padding: 4px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90%;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+}
+
+footer hr {
+  border-width: 3px;
+}
+
+footer .social > img {
+  padding: 1%;
+  font-size: 15px;
+  width: auto;
+  height: 30px;
+  -webkit-transition: 0.25s all ease-in-out;
+  transition: 0.25s all ease-in-out;
+}
+
+footer .social > img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+footer .policy > div {
+  padding: 4px;
+}
+
+footer .card-text li img {
+  padding: 1%;
+  font-size: 15px;
+  width: auto;
+  height: 30px;
+  -webkit-transition: 0.25s all ease-in-out;
+  transition: 0.25s all ease-in-out;
+}
+
+footer .card-text li img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+footer .heading {
+  font-family: "Titillium Web", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 107%;
+  text-transform: uppercase;
+  color: #8f96a3;
+}
+
+footer .divider {
+  border-top: 2px solid rgba(189, 196, 203, 0.5);
+}
+
+footer .extra-links {
+  margin-right: 15%;
+}
+
+footer .newsletter {
+  text-align: center;
+  border: 1px solid #455065;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  height: auto;
+  width: 50%;
+}
+
+footer .newsletter span {
+  display: inline-block;
+  padding: 1% 1%;
+}
+
+footer .newsletter span input {
+  border: none;
+  background: transparent;
+}
+
+footer .newsletter span input[type="text"]:focus {
+  outline: none;
+}
+
+footer .newsletter span button {
+  all: unset;
+  background: #aacc00;
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: #ffffff;
+  width: auto;
+}
+
+footer .fl-wrap {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+footer .bbb-wrapper .subcribe-form p {
+  color: #fff;
+  font-size: 14px;
+}
+
+footer .bbb-wrapper .subcribe-form form {
+  max-width: 450px;
+  margin: 15px auto;
+  position: relative;
+}
+
+footer .bbb-wrapper .subcribe-form #subscribe input {
+  width: 100%;
+  height: 48px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 1px;
+  padding: 0 30px;
+  -webkit-box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.2);
+}
+
+footer .bbb-wrapper .subcribe-form #subscribe #subscribe-button {
+  height: 38px;
+  padding: 0 20px;
+  border-radius: 3px;
+  border: none;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  font-size: 11px;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer .subscribe-message {
+  color: #fff;
+  float: left;
+  margin-top: 10px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+footer .color-bg {
+  background: #aacc00;
+}
+
+footer #subscribe-button:hover {
+  background: #829b07;
+  color: #fff;
+}
+
+
+
 @media screen and (min-width: 1280px) {
   .header-nav {
     background-size: 100% 100%;
@@ -249,7 +457,26 @@ html,body
     margin: 0 !important;
     width: 100% !important;
   }
+  .img-contain{
+    transform: scale(1)
+  }
   
+}
+
+
+@media screen and (max-width: 900px) {
+  .page-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sub-class {
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */
