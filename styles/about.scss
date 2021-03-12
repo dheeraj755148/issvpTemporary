@@ -597,7 +597,7 @@ footer {
 
     .bbb-wrapper .subcribe-form #subscribe #subscribe-button {
         height: 38px;
-        padding: 0 30px;
+        padding: 0 20px;
         border-radius: 3px;
         border: none;
         position: absolute;
@@ -673,4 +673,11 @@ footer {
     .page-footer {
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 576px) {
+    .sub-class{
+        margin-top: 20px;
+    }
+
 }

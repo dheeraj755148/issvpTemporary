@@ -676,7 +676,7 @@ footer .bbb-wrapper .subcribe-form #subscribe input {
 
 footer .bbb-wrapper .subcribe-form #subscribe #subscribe-button {
   height: 38px;
-  padding: 0 30px;
+  padding: 0 20px;
   border-radius: 3px;
   border: none;
   position: absolute;
@@ -749,6 +749,12 @@ footer #subscribe-button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sub-class {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=about.css.map */
