@@ -5,6 +5,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .header-nav .bg-light {
@@ -27,6 +29,10 @@
 .header-nav .nav-link:hover,
 .header-nav .navbar-brand:hover {
   color: rosybrown;
+}
+
+.header-nav .scrolled {
+  background: white;
 }
 
 .header-nav .navbar-light .navbar-nav .nav-link {
@@ -111,6 +117,65 @@
 }
 
 .header-nav nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+.header-nav nav ul li .nav-style-change,
+.header-nav nav ul li .nav-style-change:after,
+.header-nav nav ul li .nav-style-change:before {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header-nav nav ul li .nav-style-change:hover {
+  color: rosybrown;
+}
+
+.header-nav nav.stroke ul li .nav-style-change,
+.header-nav nav.fill ul li .nav-style-change {
+  position: relative;
+}
+
+.header-nav nav.stroke ul li .nav-style-change:after,
+.header-nav nav.fill ul li .nav-style-change:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: black;
+  height: 1px;
+}
+
+.header-nav nav.stroke ul li .nav-style-change:hover:after {
+  width: 100%;
+}
+
+.header-nav nav.fill ul li .nav-style-change {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.header-nav nav.fill ul li .nav-style-change:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+
+.header-nav nav.fill ul li .nav-style-change:hover {
+  color: #fff;
+  z-index: 1;
+}
+
+.header-nav nav.fill ul li .nav-style-change:hover:after {
   z-index: -10;
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;

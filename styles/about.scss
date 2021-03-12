@@ -5,6 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.25s ease-in-out;
     .bg-light {
         background-color: transparent !important;
     }
@@ -22,6 +23,9 @@
         &:hover {
             color: rosybrown;
         }
+    }
+    .scrolled {
+        background: white;
     }
     .navbar-light .navbar-nav .nav-link {
         color: #fff;
@@ -95,7 +99,61 @@
         -moz-animation: fill 1s forwards;
         opacity: 1;
     }
+    // nav-style-change
+    nav ul li .nav-style-change,
+    nav ul li .nav-style-change:after,
+    nav ul li .nav-style-change:before {
+        transition: all 0.5s;
+    }
+    nav ul li .nav-style-change:hover {
+        color: rosybrown;
+    }
+    nav.stroke ul li .nav-style-change,
+    nav.fill ul li .nav-style-change {
+        position: relative;
+    }
+    nav.stroke ul li .nav-style-change:after,
+    nav.fill ul li .nav-style-change:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: ".";
+        color: transparent;
+        background: black;
+        height: 1px;
+    }
+    nav.stroke ul li .nav-style-change:hover:after {
+        width: 100%;
+    }
+
+    nav.fill ul li .nav-style-change {
+        transition: all 2s;
+    }
+
+    nav.fill ul li .nav-style-change:after {
+        text-align: left;
+        content: ".";
+        margin: 0;
+        opacity: 0;
+    }
+    nav.fill ul li .nav-style-change:hover {
+        color: #fff;
+        z-index: 1;
+    }
+    nav.fill ul li .nav-style-change:hover:after {
+        z-index: -10;
+        animation: fill 1s forwards;
+        -webkit-animation: fill 1s forwards;
+        -moz-animation: fill 1s forwards;
+        opacity: 1;
+    }
+
+    // nav-style-change
 }
+
 .info-section {
     .blocked-material {
         float: left;
@@ -676,8 +734,7 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-    .sub-class{
+    .sub-class {
         margin-top: 20px;
     }
-
 }
